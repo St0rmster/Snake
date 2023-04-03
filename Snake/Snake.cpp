@@ -42,11 +42,14 @@ void Draw()
 			else
 				cout << " ";
 			if (j == width - 1)
-				cout << endl;
+				cout << "#";
 		}
+		cout << endl;
+	}
 
 	for (int i = 0; i < width; i++)
 		cout << "#";
+	cout << endl;
 }
 void Input()
 {
