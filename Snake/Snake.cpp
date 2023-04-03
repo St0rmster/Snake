@@ -44,7 +44,6 @@ void Draw()
 			if (j == width - 1)
 				cout << endl;
 		}
-	}
 
 	for (int i = 0; i < width; i++)
 		cout << "#";
