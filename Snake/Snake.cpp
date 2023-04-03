@@ -60,12 +60,42 @@ void Input()
 {
 	if (_kbhit())
 	{
-
+		switch (_getch())
+		{
+		case 'a':
+			dir = LEFT;
+			break;
+		case 'd':
+			dir = RIGHT;
+			break;
+		case 'W':
+			dir = UP;
+			break;
+		case 's':
+			dir = DOWN;
+			break;
+		case 'x':
+			gameOver = true;
+			break;
+		}
 	}
 }
 void Logic()
 {
-
+	switch (dir)
+	{
+	case LEFT:
+		x--;
+		break;
+	case RIGHT:
+		break;
+	case UP:
+		break;
+	case DOWN:
+		break;
+	default:
+		break;
+	}
 }
 int main()
 {
