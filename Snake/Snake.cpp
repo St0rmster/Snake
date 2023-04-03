@@ -7,6 +7,7 @@
 #include <unistd.h>
 #endif
 #include <iostream>
+#include <conio.h>
 #include <cstdlib>
 using namespace std;
 bool gameOver;
@@ -57,7 +58,10 @@ void Draw()
 }
 void Input()
 {
+	if (_kbhit())
+	{
 
+	}
 }
 void Logic()
 {
